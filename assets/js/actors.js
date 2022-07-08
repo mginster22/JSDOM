@@ -124,3 +124,61 @@ function stringToColour(str) {
   </li> -->
 </ul>
 </section> */}
+
+// //*:root {
+//   font-size: 16px;
+// }
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+// #actors {
+//   text-align: center;
+// }
+// .actors-heading,
+// .card-name,
+// .card-info {
+//   text-transform: capitalize;
+//   padding: 5px 0;
+// }
+
+// .cards-container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   list-style: none;
+// }
+// .card-wrapper {
+//   margin: 10px;
+// }
+
+// .card-container {
+//   width: 250px;
+//   border: 1px solid black;
+// }
+// .card-photo-wrapper {
+//   width: inherit;
+//   position: relative;
+//   height: 250px;
+// }
+// .card-photo-wrapper > * {
+//   width: inherit;
+//   height: inherit;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+// }
+// .card-initials {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 5rem;
+// }
+// .card-photo {
+//   height: 250px;
+//   object-fit: cover;
+//   object-position: top;
+// }

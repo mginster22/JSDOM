@@ -1,23 +1,33 @@
 "use strict";
-const messages = [];
 const form = document.getElementById("form");
 const messagessContaimer = document.getElementById("messagess");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", formHandler);
+function formHandler(e) {
   e.preventDefault();
-  const testValue = e.target.text.value.trim();
-  const pattern = /^[A-Z][a-z]{2,12} [A-Z][a-z]{2,12}\.$/;
-  if (!messages.includes(testValue)&&pattern.test(testValue)) {
-    messages.push(testValue);
-    messagessContaimer.append(
-      createElement("p", { events: { click: handlClick } }, testValue)
-    );
-  }
-  form.reset();
-});
+  const textValue = e.target.text.value;
 
-function handlClick({ target }) {
-  target.style.backgroundColor = "red";
+  const pElem = createElement(
+    "p",
+    { events: { click: messageHanldeClick } },
+    textValue
+  );
+  const btnDelete = createElement(
+    "button",
+    { events: { click: btnDeleteHandler.bind(pElem) } },
+    "x",
+    
+  );
+  pElem.append(btnDelete)
+  messagessContaimer.append(pElem);
+  console.log(textValue);
+}
+function btnDeleteHandler() {
+  this.remove();
+}
+
+function messageHanldeClick({ target }) {
+  target.style.color = "red";
 }
 
 function createElement(
