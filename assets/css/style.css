@@ -1,0 +1,38 @@
+:root {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#actors {
+  text-align: center;
+}
+.actors-heading,
+.card-name,
+.card-info {
+  text-transform: capitalize;
+  padding: 5px 0;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center ;
+  list-style: none;
+}
+.card-wrapper{
+  margin: 10px;
+}
+
+.card-container {
+  border: 1px solid black;
+}
+
+.card-photo {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+}
